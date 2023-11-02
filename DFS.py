@@ -24,18 +24,19 @@ class Graph:
             if visited[i] == False:
                 self.DFSUtil(i, visited)
     def DFS(self):
-        v=len(self.Graph)
-        visited=[False]*(v)
+    # Determine the maximum vertex number
+        v = max(self.Graph.keys()) + 1
+        visited = [False] * v
         for i in range(v):
-            if (visited[i]==False):
+            if not visited[i]:
                 self.DFSUtil(i, visited)
 g=Graph()
 g.addEdge(0,1)
 g.addEdge(0,2)
-g.addEdge(1,2)
-g.addEdge(2,0)
 g.addEdge(2,3)
-g.addEdge(3,3)
+g.addEdge(3,4)
+g.addEdge(3,5)
+g.addEdge(3,6)
 print("Following is DFS (starting from vertex 1)")
 g.DFS()
 """
