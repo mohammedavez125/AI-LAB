@@ -109,4 +109,4 @@ Graph_nodes = {
     "E": [("D", 6)],
     "D": [("G", 1)],
 }
-aStarAlgo("A", "G")
+aStarAlgo("A", "D")
