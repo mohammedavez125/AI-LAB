@@ -12,10 +12,8 @@ def best_first_search(actual_src, target, n):
     while not pq.empty():
         u = pq.get()[1]
         print(u, end=" ")
-
         if u == target:
             break
-
         for v, c in graph[u]:
             if not visited[v]:
                 visited[v] = True
