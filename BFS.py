@@ -4,7 +4,7 @@ Created on Thu Nov  2 09:49:25 2023
 
 @author: moham
 """
-# DFS
+# BFS
 from collections import defaultdict
 class Graph:
     def __init__(self):
