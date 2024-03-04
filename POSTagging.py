@@ -1,5 +1,3 @@
-#import Libraries
-#import Libraries
 import nltk
 nltk.download('averaged_perceptron_tagger')
 text= """Natural Language Processing with Python provides a practical introduction to programming for
